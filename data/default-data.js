@@ -73,18 +73,44 @@ async.series([
     	// Admin user
         var user = new User({
         	_id		: 1,
-			name	: 'Ben Affleck',
-			username: 'admin@gmail.com',
-			email	: 'admin@gmail.com',
-			rating	: 0,
+			name	: 'Boitumelo Menyatswe',
+			username: 'Tumi',
+			email	: 'admin@gminderz.co.za',
+			rating	: 5,
 			banned	: false,
-			location: 'Toronto, ON',
+			location: 'Cape Town, WC',
 			role	: 'admin',
-			description: 'I joined the PetCare team last month. Now I work as their system admin. Please contact me for any issues', 
+			description: 'I founded Minderz. Now I work as a system admin. Please contact me for any issues', 
 			photo: 'https://s3.amazonaws.com/pet.care/benAffleck.jpg'
 		});
 
-		var password = 'admin123'
+		var password = '1amAdm!n123'
+
+        User.register(user, password, function(err) {
+			if (err) {
+				console.log(err);
+			}
+			callback();
+		});
+    },
+	
+	function(callback) {		// Adding the admin user
+
+    	// Admin user
+        var user = new User({
+        	_id		: 2,
+			name	: 'Thomas Fihla',
+			username: 'FihlaTV',
+			email	: 'admin@gminderz.co.za',
+			rating	: 4,
+			banned	: false,
+			location: 'Klerksdorp, NW',
+			role	: 'admin',
+			description: 'Iam in charge of Technical Support. Please contact me for any technical or emergency issues', 
+			photo: 'https://s3.amazonaws.com/pet.care/benAffleck.jpg'
+		});
+
+		var password = '$yst3m0p3r@t0r'
 
         User.register(user, password, function(err) {
 			if (err) {
@@ -96,13 +122,13 @@ async.series([
 
     function(callback) {		// Adding regular user
     	var user = new User({
-        	_id		: 2,
+        	_id		: 3,
 			name	: 'Jennifer Lawrence',
 			username: 'jennifer@gmail.com',
 			email	: 'jennifer@gmail.com',
 			rating	: 4,
 			banned	: false,
-			location: 'Toronto, ON',
+			location: 'Thekwini, Durban',
 			role	: 'regular',
 			description: 'Hi my name is Jennifer. I offer pet sitting during week days. Golden Retrievers are my favourite', 
 			photo: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg'
@@ -120,15 +146,15 @@ async.series([
 
     function(callback) {		// Adding regular user
     	var user = new User({
-        	_id		: 3,
+        	_id		: 4,
 			name	: 'Christian Bale',
 			username: 'bale@gmail.com',
 			email	: 'bale@gmail.com',
 			rating	: 3,
 			banned	: false,
-			location: 'Toronto, ON',
+			location: 'JHB, GP',
 			role	: 'regular',
-			description: 'I love the PetCare.com service. Check out my posts and contact me if you\'re interested. Thanks', 
+			description: 'I love the Minderz service. Check out my posts and contact me if you\'re interested. Thanks', 
 			photo: 'https://s3.amazonaws.com/pet.care/Bale.jpeg'
 		});
 
@@ -170,7 +196,7 @@ async.series([
     	var pet = new Pet({
         	_id: 2,
 			name: 'Chloe',
-			user: 2,
+			user: 3,
 			type: 'Dog',
 			breed: 'Border Terrier',
 			gender: 'Female',
@@ -192,7 +218,7 @@ async.series([
     function(callback) {		// Adding pet to userId=3
     	
     	var pet = new Pet({
-        	_id: 3,
+        	_id: 4,
 			name: 'Polly',
 			user: 3,
 			type: 'Bird',
@@ -679,7 +705,7 @@ async.series([
 		    pet: 2,
 			title: 'Looking for a kind pet sitter.',
 			duration: 'Feb 01 2016 to Feb 07 2016',
-			location: 'Ottawa',
+			location: 'JHB',
 			price: '65',
 			supplies: 'Toys, Kennel, Clothes',
 			additional_info: 'N/A',
@@ -704,7 +730,7 @@ async.series([
 		    pet: 3,
 			title: 'Looking for a bird sitter.',
 			duration: 'May 01 2016 to May 07 2016',
-			location: 'Toronto',
+			location: 'Cape Town',
 			price: '40',
 			supplies: 'Birdcage, Food',
 			additional_info: 'N/A',
@@ -729,7 +755,7 @@ async.series([
 		    pet: 3,
 			title: 'Looking for a bird sitter.',
 			duration: 'Apr 01 2016 to Apr 07 2016',
-			location: 'Toronto',
+			location: 'Durban',
 			price: '40',
 			supplies: 'Birdcage, Food',
 			additional_info: 'N/A',
@@ -754,7 +780,7 @@ async.series([
 		    pet: 3,
 			title: 'Looking for a kind pet sitter.',
 			duration: 'Oct 01 2015 to Oct 07 2015',
-			location: 'Calgary',
+			location: 'Klerksdorp',
 			price: '40',
 			supplies: 'Birdcage, Food',
 			additional_info: 'N/A',
@@ -779,7 +805,7 @@ async.series([
 		    pet: 4,
 			title: 'Looking for a kind cat sitter in Vancouver.',
 			duration: 'May 27 2016 to May 30 2016',
-			location: 'Vancouver',
+			location: 'Cape Town',
 			price: '75',
 			supplies: 'Birdcage, Food',
 			additional_info: 'N/A',
@@ -804,7 +830,7 @@ async.series([
 		    pet: 4,
 			title: 'Looking for a kind cat sitter in Calgary.',
 			duration: 'Apr 27 2016 to Apr 30 2016',
-			location: 'Calgary',
+			location: 'Stellenbosch',
 			price: '70',
 			supplies: 'Birdcage, Food',
 			additional_info: 'N/A',
@@ -829,7 +855,7 @@ async.series([
 			title: 'Experienced pet sitter in Downtown Toronto',
 			types: 'Dog, Cat',
 			duration: 'May 01 2016 to May 30 2016',
-			location: 'Downtown, Toronto, ON',
+			location: 'Thekwino, Durban, KZN',
 			price: '20 - 25',
 			experience: '2 years',
 			supplies: 'Educational toys',
@@ -855,7 +881,7 @@ async.series([
 			title: 'I will look after your dogs and cats during weekdays',
 			types: 'Dog, Cat',
 			duration: 'May 01 2015 to May 30 2015',
-			location: 'Downtown, Toronto, ON',
+			location: 'Pretoria, Gauteng, GP',
 			price: '20 - 25',
 			experience: '1 year',
 			supplies: 'Educational toys',
@@ -878,7 +904,7 @@ async.series([
     	var sitter_posting = new Sitter_Posting({
     		_id: 3,
 		    user: 2,
-			title: 'Experienced pet sitter Near Calgary',
+			title: 'Experienced pet sitter Near Cape Town',
 			types: 'Dog, Cat, Bird, Rabit, Fish',
 			duration: 'May 01 2016 to May 30 2016',
 			location: 'Calgary',
@@ -886,7 +912,7 @@ async.series([
 			experience: '5 years',
 			supplies: 'Food, Toys',
 			number_of_pets: 10,
-			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in Canada.',
+			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in Western Cape.',
 			thumbnail: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg',
 			status: 'open'
 		});
@@ -904,10 +930,10 @@ async.series([
     	var sitter_posting = new Sitter_Posting({
     		_id: 4,
 		    user: 2,
-			title: 'Pet Sitter Near Toronto. I offer pet sitting in the GTA area',
+			title: 'Pet Sitter Near Klerksdorp. I offer pet sitting in the NW area',
 			types: 'Dog, Cat, Bird, Rabit, Fish',
 			duration: 'May 01 2016 to May 30 2016',
-			location: 'Toronto',
+			location: 'North-West',
 			price: '20 - 50',
 			experience: '5 years',
 			supplies: 'Food, Toys',
@@ -930,15 +956,15 @@ async.series([
     	var sitter_posting = new Sitter_Posting({
     		_id: 5,
 		    user: 2,
-			title: 'Sitter Near Ottawa. Contact me for more details',
+			title: 'Sitter Near JHB. Contact me for more details',
 			types: 'Dog, Cat, Bird, Rabit, Fish',
 			duration: 'May 01 2016 to May 30 2016',
-			location: 'Ottawa',
+			location: 'Gauteng',
 			price: '20 - 50',
 			experience: '5 years',
 			supplies: 'Food, Toys',
 			number_of_pets: 10,
-			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in Canada.',
+			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in South Africa.',
 			thumbnail: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg',
 			status: 'open'
 		});
@@ -956,7 +982,7 @@ async.series([
     	var sitter_posting = new Sitter_Posting({
     		_id: 6,
 		    user: 2,
-			title: 'I offer pet sitting near Vancouver',
+			title: 'I offer pet sitting near Cape TOwn',
 			types: 'Dog, Cat, Bird, Rabit, Fish',
 			duration: 'May 01 2016 to May 30 2016',
 			location: 'Vancouver',
@@ -964,7 +990,7 @@ async.series([
 			experience: '5 years',
 			supplies: 'Food, Toys',
 			number_of_pets: 10,
-			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in Canada.',
+			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in South Africa.',
 			thumbnail: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg',
 			status: 'open'
 		});
@@ -1011,7 +1037,7 @@ async.series([
 			title: 'I will look after your pets. Please contact me',
 			types: 'Horse, Sheep, Chicken, Rabbit, Donkey',
 			duration: 'Apr 01 2016 to Aug 30 2016',
-			location: 'Vancouver',
+			location: 'Limpompo',
 			price: '40 - 60',
 			experience: '10 years',
 			supplies: 'Food, Toys, Spacious yard',
@@ -1037,7 +1063,7 @@ async.series([
 			title: 'Donkey Donkey Farm offers pet sitters for low rates',
 			types: 'Horse, Sheep, Chicken, Rabbit, Donkey',
 			duration: 'Apr 01 2015 to Aug 30 2015',
-			location: 'Vancouver',
+			location: 'Mpumalanga',
 			price: '30 - 50',
 			experience: '10 years',
 			supplies: 'Food, Toys, Spacious yard',
@@ -1060,15 +1086,15 @@ async.series([
     	var sitter_posting = new Sitter_Posting({
     		_id: 10,
 		    user: 3,
-			title: 'Donkey Donkey Farm in Toronto - I will look after your pets',
+			title: 'Donkey Donkey Farm in Cape Town - I will look after your pets',
 			types: 'Horse, Sheep, Chicken, Rabbit, Donkey',
 			duration: 'Oct 01 2016 to Oct 30 2016',
-			location: 'Toronto',
+			location: 'Cape Town',
 			price: '50 - 70',
 			experience: '10 years',
 			supplies: 'Food, Toys, Spacious yard',
 			number_of_pets: 9,
-			description: 'Hello folks. Donkey Donkey Farm would like to take care of your pets. We will start new farm in Toronto and offer pet sitters as well.',
+			description: 'Hello folks. Donkey Donkey Farm would like to take care of your pets. We will start new farm in Cape Town and offer pet sitters as well.',
 			thumbnail: 'https://s3.amazonaws.com/pet.care/Bale.jpeg',
 			status: 'open'
 		});

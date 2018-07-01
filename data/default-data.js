@@ -24,7 +24,7 @@ var async 				= require('async');
 // NOTE: Dont forget to run 'mongod' (mongoDB daemon) in a different terminal
 var uristring = process.env.MONGOLAB_URI || 
 				process.env.MONGOHQ_URL ||
-				"mongodb://localhost/testDB"
+				"mongodb://localhost/minderzDB"
 
 var connection = mongoose.connect(uristring);
 autoIncrement.initialize(connection);
@@ -74,14 +74,14 @@ async.series([
         var user = new User({
         	_id		: 1,
 			name	: 'Boitumelo Menyatswe',
-			username: 'Tumi',
-			email	: 'admin@gminderz.co.za',
+			username: 'tumi@minderz.co.za',
+			email	: 'tumi@minderz.co.za',
 			rating	: 5,
 			banned	: false,
 			location: 'Cape Town, WC',
 			role	: 'admin',
 			description: 'I founded Minderz. Now I work as a system admin. Please contact me for any issues', 
-			photo: 'https://s3.amazonaws.com/pet.care/benAffleck.jpg'
+			photo: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/tumi.jpeg'
 		});
 
 		var password = '1amAdm!n123'
@@ -101,16 +101,16 @@ async.series([
         	_id		: 2,
 			name	: 'Thomas Fihla',
 			username: 'FihlaTV',
-			email	: 'admin@gminderz.co.za',
+			email	: 'support@minderz.co.za',
 			rating	: 4,
 			banned	: false,
 			location: 'Klerksdorp, NW',
 			role	: 'admin',
 			description: 'Iam in charge of Technical Support. Please contact me for any technical or emergency issues', 
-			photo: 'https://s3.amazonaws.com/pet.care/benAffleck.jpg'
+			photo: 'https://s3.us-east-2.amazonaws.com/minderzminderzData/fihlatv.jpeg'
 		});
 
-		var password = '$yst3m0p3r@t0r'
+		var password = '$yst3m0p'
 
         User.register(user, password, function(err) {
 			if (err) {
@@ -131,7 +131,7 @@ async.series([
 			location: 'Thekwini, Durban',
 			role	: 'regular',
 			description: 'Hi my name is Jennifer. I offer pet sitting during week days. Golden Retrievers are my favourite', 
-			photo: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg'
+			photo: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/293664_xcitefun-sexy-hairstyles-for-black-women-2012-05.jpg'
 		});
 
 		var password = '12345678'
@@ -147,7 +147,7 @@ async.series([
     function(callback) {		// Adding regular user
     	var user = new User({
         	_id		: 4,
-			name	: 'Christian Bale',
+			name	: 'Chris Bale',
 			username: 'bale@gmail.com',
 			email	: 'bale@gmail.com',
 			rating	: 3,
@@ -155,7 +155,7 @@ async.series([
 			location: 'JHB, GP',
 			role	: 'regular',
 			description: 'I love the Minderz service. Check out my posts and contact me if you\'re interested. Thanks', 
-			photo: 'https://s3.amazonaws.com/pet.care/Bale.jpeg'
+			photo: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/11539634_10153316749756413_4080851480324854430_n.jpg'
 		});
 
 		var password = '12345678'
@@ -660,7 +660,7 @@ async.series([
 			supplies: 'Toys, Kennel, Clothes',
 			additional_info: 'N/A',
 			description: 'I have urgent meeting this Friday in Ottawa. Looking for a pet sitter just for one day from morning to night.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/dog1.jpg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/158.jpg',
 			status: 'open'
 		});
 
@@ -685,7 +685,7 @@ async.series([
 			supplies: 'Toys, Kennel, Clothes',
 			additional_info: 'N/A',
 			description: 'I have one dog in Ottawa and I am going to another city for this summer. Unfortunately, I can\'t go with her. Looking for someone who likes dog and would like to spend this summer with her.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/terrier1.jpg',
+			thumbnail: 'https:/https://s3.us-east-2.amazonaws.com/minderz/minderzData/160.jpg',
 			status: 'open'
 		});
 

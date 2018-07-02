@@ -6,8 +6,7 @@ PetCare is an online service where individuals who are looking for someone to ta
 1. Install node.js
 2. Install npm
 3. Install mongoDB 3.2 Community Edition    
-    OS X: 			https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/    
-    Windows:		https://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/
+   
 4. Copy the Amazon AWS credentials file
     On OS X/Linux, copy into	~/.aws/credentials   
     On Windows, copy into 		C:\Users\USERNAME\.aws\credentials   

@@ -180,7 +180,7 @@ async.series([
 			age: 2,
 			description: 'Max is a Labrador Retriever.',
 			rating: 3,
-			photo: 'https://s3.amazonaws.com/pet.care/dog1.jpg'
+			photo: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/268.jpg'
 		});
 
         pet.save(function(err, report) {
@@ -203,8 +203,7 @@ async.series([
 			age: 1,
 			description: 'Chloe is my favourite pet.',
 			rating: 5,
-			photo: 'https://s3.amazonaws.com/pet.care/terrier1.jpg'
-		});
+			photo: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/160.jpg'
 
         pet.save(function(err, report) {
 			if(err){
@@ -251,7 +250,7 @@ async.series([
 			age: 4,
 			description: 'This is my favourite pet.',
 			rating: 2,
-			photo: 'https://s3.amazonaws.com/pet.care/siamese1.jpg'
+			photo: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/11181401_10153173708566413_2013537877270644445_n.jpg'
 		});
 
         pet.save(function(err, report) {
@@ -610,7 +609,7 @@ async.series([
 			supplies: 'Toys, Kennel, Clothes',
 			additional_info: 'N/A',
 			description: 'Looking for someone to take care of my dog while I am out of the country.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/dog1.jpg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/11181401_10153173708566413_2013537877270644445_n.jpg',
 			status: 'open'
 		});
 
@@ -660,7 +659,7 @@ async.series([
 			supplies: 'Toys, Kennel, Clothes',
 			additional_info: 'N/A',
 			description: 'I have urgent meeting this Friday in Ottawa. Looking for a pet sitter just for one day from morning to night.',
-			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/158.jpg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/11539634_10153316749756413_4080851480324854430_n.jpg',
 			status: 'open'
 		});
 
@@ -835,7 +834,7 @@ async.series([
 			supplies: 'Birdcage, Food',
 			additional_info: 'N/A',
 			description: 'I will traverl Calgary with my cat but I want to travel alone for just a few days.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/siamese1.jpg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/042.jpg',
 			status: 'open'
 		});
 
@@ -861,7 +860,7 @@ async.series([
 			supplies: 'Educational toys',
 			number_of_pets: 5,
 			description: 'Hi everyone. I love pets especially dogs and cats. I would like to take care of your pets. Please contact me for more information.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/benAffleck.jpg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/Alicia+keys.jpg',
 			status: 'open'
 		});
 
@@ -887,7 +886,7 @@ async.series([
 			supplies: 'Educational toys',
 			number_of_pets: 5,
 			description: 'Hi everyone. I love pets especially dogs and cats. I would like to take care of your pets. Please contact me for more information.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/benAffleck.jpg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/Alicia+keys.jpg',
 			status: 'closed'
 		});
 
@@ -913,7 +912,7 @@ async.series([
 			supplies: 'Food, Toys',
 			number_of_pets: 10,
 			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in Western Cape.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/Alicia+keys.jpg',
 			status: 'open'
 		});
 
@@ -939,7 +938,7 @@ async.series([
 			supplies: 'Food, Toys',
 			number_of_pets: 10,
 			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in Canada.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/Alicia+keys.jpg',
 			status: 'open'
 		});
 
@@ -965,7 +964,7 @@ async.series([
 			supplies: 'Food, Toys',
 			number_of_pets: 10,
 			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in South Africa.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/Alicia+keys.jpg',
 			status: 'open'
 		});
 
@@ -991,7 +990,7 @@ async.series([
 			supplies: 'Food, Toys',
 			number_of_pets: 10,
 			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in South Africa.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/Alicia+keys.jpg',
 			status: 'open'
 		});
 
@@ -1017,7 +1016,7 @@ async.series([
 			supplies: 'Food, Toys',
 			number_of_pets: 10,
 			description: 'I have raised many types of pets. This May, my friends and I are going to offer pet sitters. We plan to offer this in any place in Canada.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/jenifferL.jpeg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/Alicia+keys.jpg',
 			status: 'open'
 		});
 
@@ -1043,7 +1042,7 @@ async.series([
 			supplies: 'Food, Toys, Spacious yard',
 			number_of_pets: 10,
 			description: 'Hello folks. Donkey Donkey Farm would like to take care of your pets. We have very spacious yard so we can accomodate big pets.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/Bale.jpeg',
+			thumbnail: 'https://s3.us-east-2.amazonaws.com/minderz/minderzData/fihlatv.jpeg',
 			status: 'open'
 		});
 
@@ -1069,7 +1068,7 @@ async.series([
 			supplies: 'Food, Toys, Spacious yard',
 			number_of_pets: 9,
 			description: 'Hello folks. Donkey Donkey Farm would like to take care of your pets. We have very spacious yard so we can accomodate big pets.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/Bale.jpeg',
+			thumbnail: 'https://s3.amazonaws.com/pet.care/fihlatv.jpeg',
 			status: 'closed'
 		});
 
@@ -1095,7 +1094,7 @@ async.series([
 			supplies: 'Food, Toys, Spacious yard',
 			number_of_pets: 9,
 			description: 'Hello folks. Donkey Donkey Farm would like to take care of your pets. We will start new farm in Cape Town and offer pet sitters as well.',
-			thumbnail: 'https://s3.amazonaws.com/pet.care/Bale.jpeg',
+			thumbnail: 'https://s3.amazonaws.com/pet.care/fihlatv.jpeg',
 			status: 'open'
 		});
 
